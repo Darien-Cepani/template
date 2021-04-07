@@ -10,6 +10,8 @@ import { TimeForEffectComponent } from './time-for-effect/time-for-effect.compon
 import { BeforeAfterComponent } from './before-after/before-after.component';
 import { CovidWarningComponent } from './covid-warning/covid-warning.component';
 import { OrderFormComponent } from './order-form/order-form.component';
+import { CountdownModule } from 'ngx-countdown';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -20,11 +22,13 @@ import { OrderFormComponent } from './order-form/order-form.component';
     TimeForEffectComponent,
     BeforeAfterComponent,
     CovidWarningComponent,
-    OrderFormComponent
+    OrderFormComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    CountdownModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,25 +1,11 @@
 <div class="form">
   <form action="/land/order" method="post" class="x_order_form al-form">
-    <h5 class="w_700">
-      Porositni përpara se afati të  <br> skadojë dhe merrni një zbritje prej
+    <h5>
+      Porositni përpara se afati të <br> skadojë dhe merrni një zbritje prej
       <br>
     </h5>
-    <div class="timer_container ">
-      <div class="timer">
-        <div class="item-timer ih">
-          <span class="d_hours"></span>
-          <span class="d_hours"></span>
-        </div>
-        <div class="item-timer im">
-          <span class="d_minutes"></span>
-          <span class="d_minutes"></span>
-        </div>
-        <div class="item-timer is">
-          <span class="d_seconds"></span>
-          <span class="d_seconds"></span>
-        </div>
-      </div>
-    </div>
+    <countdown [config]="{leftTime: 44000}"></countdown>
+
     <span class="price w_700">
     <span class="old x_price_previous al-raw-cost-promo"></span><span class="old x_currency al-raw-currency">&euro;</span>
     <span class="new">
