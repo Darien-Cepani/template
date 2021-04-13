@@ -1,0 +1,88 @@
+.form{
+  --accent-color: #497592;
+  margin-left: 20vw;
+  box-shadow: 7px 7px 17px var(--accent-color);
+  border-radius: 20px;
+  padding: 20px;
+  display: inline-block;
+  text-align: center;
+}
+
+h5{
+  font-size: 1rem;
+}
+
+.countdown{
+  position: relative;
+  text-align: center;
+  background-color: red;
+  font-size: 2rem;
+  padding: 20px 30px;
+  border-radius: 50px;
+  color: white;
+  font-weight: bold;
+}
+
+.price{
+  display: flex;
+  font-size: 2rem;
+  margin: 20px;
+  padding: 20px;
+}
+
+.old-price{
+  text-decoration: 2px solid red line-through;
+  color: var(--accent-color);
+  margin-right: 5px;
+}
+
+.new-price{
+    margin-left: 5px;
+    font-weight: bold;
+}
+
+.customInput{
+  padding: 10px;
+  box-shadow: inset 3px 3px 7px var(--accent-color);
+  text-decoration: none;
+  margin: 10px 0px;
+  border-radius: 50px;
+  -webkit-appearance: none;
+  text-align: left;
+  transform: box-shadow 2ms ease-in-out;
+}
+
+.customInput:hover{
+  box-shadow: 3px 3px 7px var(--accent-color);
+  transition: all 2ms ease-in-out;
+}
+
+textarea, input {
+  outline: none;
+}
+
+.button{
+  border: 2px solid var(--accent-color);
+  color: var(--accent-color);
+  padding: 1rem 2rem;
+  margin: 0;
+  text-decoration: none;
+  background: white;
+  border-radius: 50px;
+  font-weight: bold;
+  font-family: sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: center;
+  transition: 2ms ease-in-out;
+  transition: background 250ms ease-in-out, transform 150ms ease;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.button:hover{
+  border: 2px solid var(--accent-color);
+  background: var(--accent-color);
+  color: #ffffff;
+}
+

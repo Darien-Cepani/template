@@ -6,8 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./order-form.component.scss']
 })
 export class OrderFormComponent implements OnInit {
+  oldPrice : number;
+  newPrice : number;
 
-  constructor() { }
+  constructor() {
+    this.oldPrice = 9000;
+    this.newPrice = 4500;
+  }
 
   ngOnInit(): void {
   }
