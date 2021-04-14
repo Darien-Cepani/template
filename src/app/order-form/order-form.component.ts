@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class OrderFormComponent implements OnInit {
   oldPrice : number;
   newPrice : number;
-  strTime: number;
+  currTime: number;
 
   constructor() {
     this.oldPrice = 9000;
@@ -17,7 +17,7 @@ export class OrderFormComponent implements OnInit {
     var hours = time.getHours();
     var minutes = time.getMinutes();
     var seconds = time.getSeconds();
-    this.strTime = hours + minutes + seconds;
+    this.currTime = hours + minutes + seconds;
   }
 
   ngOnInit(): void {
