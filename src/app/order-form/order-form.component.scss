@@ -10,6 +10,8 @@
 
 h5{
   font-size: 1rem;
+  font-weight: bold;
+  margin: 17px 0px;
 }
 
 .countdown{
@@ -27,7 +29,7 @@ h5{
   display: flex;
   font-size: 2rem;
   margin: 20px;
-  padding: 20px;
+  padding: 7px 20px;
 }
 
 .old-price{
@@ -41,18 +43,20 @@ h5{
     font-weight: bold;
 }
 
-.customInput{
+input, select{
   padding: 10px;
   box-shadow: inset 3px 3px 7px var(--accent-color);
   text-decoration: none;
-  margin: 10px 0px;
+  margin: 5px 0px;
   border-radius: 50px;
   -webkit-appearance: none;
   text-align: left;
   transform: box-shadow 2ms ease-in-out;
+  border: 0px;
+  width: 80%;
 }
 
-.customInput:hover{
+input:hover, select:hover{
   box-shadow: 3px 3px 7px var(--accent-color);
   transition: all 2ms ease-in-out;
 }
@@ -65,7 +69,7 @@ textarea, input {
   border: 2px solid var(--accent-color);
   color: var(--accent-color);
   padding: 1rem 2rem;
-  margin: 0;
+  margin: 20px 0px;
   text-decoration: none;
   background: white;
   border-radius: 50px;
@@ -84,5 +88,13 @@ textarea, input {
   border: 2px solid var(--accent-color);
   background: var(--accent-color);
   color: #ffffff;
+}
+
+.zbritje{
+  font-weight: bold;
+  font-size: 1rem;
+  margin: 0px;
+  border-radius: 50px;
+  color: #497592;
 }
 
