@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TimeForEffectComponent } from './time-for-effect.component';
+import { ExpertsComponent } from './experts.component';
 
-describe('TimeForEffectComponent', () => {
-  let component: TimeForEffectComponent;
-  let fixture: ComponentFixture<TimeForEffectComponent>;
+describe('ExpertsComponent', () => {
+  let component: ExpertsComponent;
+  let fixture: ComponentFixture<ExpertsComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ TimeForEffectComponent ]
+      declarations: [ ExpertsComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(TimeForEffectComponent);
+    fixture = TestBed.createComponent(ExpertsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

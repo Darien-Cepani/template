@@ -1,0 +1,72 @@
+.container {
+  --accent-color: #497592;
+  background-color: var(--accent-color);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 70vh;
+  color: white;
+  padding: 4% 0;
+  line-height: 2em;
+}
+
+.wrapper{
+  width: 80%;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+p{
+  font-size: 1.3rem;
+}
+
+.cards{
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  color: black;
+}
+
+.cards .case{
+  border-radius: 10px;
+  box-shadow: 3px 3px 15px rgba($color: #000000, $alpha: 0.7);
+  margin: 15px;
+  width: fit-content;
+  transition: all 200ms ease-in-out;
+  background-color: white;
+  img{
+    border-radius: 10px 10px 0px 0px;
+    width: 100%;
+  }
+  .text{
+    padding: 20px;
+  }
+  .name{
+    font-size: 2rem;
+    font-weight: bold;
+    display: inline-block;
+  }
+  .age{
+    display: inline-block;
+    vertical-align:text-bottom;
+    font-size: 1em;
+    opacity: 0.7;
+    background-color: var(--accent-color);
+    border-radius: 50px;
+    padding: 0px 10px;
+    margin: auto 10px;
+    justify-self: baseline;
+    color: white;
+  }
+  .words{
+    font-size: 1rem;
+  }
+}
+
+.cards .case:hover{
+  transform: scale(1.05);
+  box-shadow: 7px 7px 25px rgba($color: #000000, $alpha: 0.7);
+}
