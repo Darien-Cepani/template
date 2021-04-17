@@ -1,10 +1,7 @@
 .warning{
   color: white;
   background: red;
-  position: relative;
-  z-index: 10000000;
-  text-transform: none;
-  padding: 10px 20px;
-  margin: 0px;
+  z-index: 2;
+  padding: 10px 20px 0.5px 20px;
   text-align: center;
 }

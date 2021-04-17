@@ -1,0 +1,40 @@
+header {
+  --accent-color: #497592;
+  background: url(../../assets/img/h-bg.png);
+  background-color: var(--accent-color);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 90vh;
+  color: white;
+  display: flex;
+}
+
+.wrapper{
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  margin: 7% auto;
+  background: rgba(49,75,92,0.7);
+  border-radius: 50px;
+  backdrop-filter: blur(10px);
+}
+
+.form{
+  margin-right: 7%;
+}
+
+.info{
+  color: white;
+  font-size: 1.2rem;
+  line-height: normal;
+  height: 100%;
+  margin: auto 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.prod-img{
+  width: 70%;
+  margin: 0 auto;
+}
+

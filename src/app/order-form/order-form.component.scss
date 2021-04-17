@@ -1,87 +1,81 @@
-.form{
+.container{
   --accent-color: #497592;
-  margin-left: 20vw;
-  box-shadow: 7px 7px 17px var(--accent-color);
+  background-color: white;
+  box-shadow: 7px 7px 17px rgba(0,0,0,0.7);
   border-radius: 20px;
-  padding: 20px;
-  display: inline-block;
+  padding: 30px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
   text-align: center;
+  color: black;
+}
+
+.countdown{
+  text-align: center;
+  background-color: red;
+  border-radius: 50px;
+  padding: 30px;
+  margin: 0 auto;
+  width: 70%;
+  font-size: 2.5rem;
+  color: white;
+  font-weight: bold;
 }
 
 h5{
   font-size: 1rem;
   font-weight: bold;
-  margin: 17px 0px;
-}
-
-.countdown{
-  position: relative;
-  text-align: center;
-  background-color: red;
-  font-size: 2rem;
-  padding: 20px 30px;
-  border-radius: 50px;
-  color: white;
-  font-weight: bold;
 }
 
 .price{
-  display: flex;
   font-size: 2rem;
-  margin: 20px;
-  padding: 7px 20px;
+  margin: 30px 0px;
 }
 
 .old-price{
   text-decoration: 2px solid red line-through;
   color: var(--accent-color);
-  margin-right: 5px;
+  margin-right: 7px;
 }
 
 .new-price{
-    margin-left: 5px;
     font-weight: bold;
 }
 
-input, select{
-  padding: 10px;
+textarea, input, select{
+  padding: 10px 10px 10px 20px;
   box-shadow: inset 3px 3px 7px var(--accent-color);
   text-decoration: none;
   margin: 5px 0px;
   border-radius: 50px;
   -webkit-appearance: none;
   text-align: left;
-  transform: box-shadow 2ms ease-in-out;
   border: 0px;
-  width: 80%;
+  width: 90%;
+  background-color: #eee;
+  transition: all 200ms ease-in-out;
 }
 
-input:hover, select:hover{
+input:hover, select:hover, textarea:hover{
   box-shadow: 3px 3px 7px var(--accent-color);
-  transition: all 2ms ease-in-out;
-}
-
-textarea, input {
-  outline: none;
+  background-color: white;
 }
 
 .button{
+  width: 100%;
   border: 2px solid var(--accent-color);
   color: var(--accent-color);
-  padding: 1rem 2rem;
+  padding: 15px 25px;
   margin: 20px 0px;
   text-decoration: none;
   background: white;
   border-radius: 50px;
   font-weight: bold;
-  font-family: sans-serif;
   font-size: 1rem;
   cursor: pointer;
   text-align: center;
-  transition: 2ms ease-in-out;
-  transition: background 250ms ease-in-out, transform 150ms ease;
-  -webkit-appearance: none;
-  -moz-appearance: none;
+  transition: all 200ms ease-in-out;
 }
 
 .button:hover{
@@ -93,12 +87,6 @@ textarea, input {
 .zbritje{
   font-weight: bold;
   font-size: 1rem;
-  margin: 0px;
-  border-radius: 50px;
-  color: #497592;
-}
-
-select:hover{
-  cursor: pointer;
+  color: var(--accent-color);
 }
 
