@@ -1,31 +1,37 @@
 .wrapper{
-  --accent-color: #497592;
+  --accent-color: #6155a6;
   display: flex;
   margin: 0 auto;
-  width: 80%;
+  width: 75%;
   flex-direction: column;
-  padding: 4% 0;
-  height: 110vh;
+  padding: 5% 0;
+  height: 90vh;
 }
 
-.top h1{
-  font-size: 2.5rem;
-}
-
-.top p{
-  font-size: 1.6rem;
+.top{
+  margin-top: 2em;
+  h1{
+    font-size: 2.5rem;
+    color: #6155a6;
+  }
+  p{
+    font-size: 1.5rem;
+    color: #a685e2;
+  }
 }
 
 .body-parts{
   display: flex;
-  flex-direction: column;
-  margin: 0 auto;
+  flex-direction: row;
+  margin: auto;
   width: 70%;
 }
 
 .human-body {
+  align-self: baseline;
   display: grid;
-  margin: 0 auto 5%;
+  margin: auto;
+  justify-content: center;
   grid-template-columns: 64px 135px 64px;
 }
 
@@ -39,11 +45,11 @@
 }
 
 .human-body svg:hover path {
-  fill: yellow;
+  fill: #ffabe1;
 }
 
 .human-body svg.yellow path {
-  fill: yellow;
+  fill: #ffabe1;
 }
 
 .human-body svg.head {
@@ -89,36 +95,37 @@
 
 .cards{
   display: flex;
-  border-radius: 10px;
   flex-wrap: wrap;
-  margin-left: 8%;
   text-align: center;
   font-weight: bold;
   justify-content: center;
+  width: 100%;
 }
 
 .cards div{
-  display: flex;
   border-radius: 10px;
-  box-shadow: 3px 3px 7px var(--accent-color);
+  padding: 1em 2em;
+  box-shadow: 3px 3px 7px rgba($color: #6155a6, $alpha: 0.5);
   height: fit-content;
-  margin: 15px;
+  margin: 0.5em;
   transition: all 200ms ease-in-out;
   justify-content: center;
-  background-color: white;
+  background-color: #6155a6;
+  color: white;
 }
 
 .cards p{
-  margin: auto;
+  margin: 0;
 }
 
 img{
-  width: 80px;
+  width: 100px;
+  filter: invert(180);
 }
 
 .cards .selected{
-  background-color: var(--accent-color);
-  box-shadow: inset 5px 5px 15px rgba($color: #000000, $alpha: 0.7);
+  background-color: #ffabe1;
+  box-shadow: inset 5px 5px 15px rgba($color: #6155a6, $alpha: 0.7);
   color: white;
   img{
     filter: invert(180);

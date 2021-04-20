@@ -1,9 +1,7 @@
 .container {
-  --accent-color: #497592;
-  background-color: var(--accent-color);
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 70vh;
+  --accent-color: #6155a6;
+  background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(97,85,166,1) 15%, rgba(97,85,166,1) 85%, rgba(255,255,255,1) 100%);
+  height: 120vh;
   color: white;
   padding: 4% 0;
   line-height: 2em;

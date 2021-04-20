@@ -8,25 +8,25 @@
       Porosisni përpara se afati të skadojë <br>
       dhe merrni një zbritje prej:
     </h5>
-    <span class="old-price">{{ oldPrice }}&euro;</span>
+    <span class="old-price strikethrough">{{ oldPrice }}&euro;</span>
     <span class="new-price">{{ newPrice }}&euro;*</span>
   </div>
 
   <form action="/land/order" method="post">
     <div>
-      <select name="country">
-        <option value="Albania">Albania</option>
-        <option value="Kosovo">Kosovo</option>
+      <select name="country" class="input">
+        <option value="Albania">Shqipëri</option>
+        <option value="Kosovo">Kosovë</option>
       </select>
     </div>
     <div>
-      <input placeholder="Emër Mbiemër" name="name" type="text">
+      <input placeholder="Emër Mbiemër" name="name" type="text" class="input">
     </div>
     <div>
-      <input placeholder="Numër telefoni" name="phone" type="tel">
+      <input placeholder="Numër telefoni" name="phone" type="tel" class="input">
     </div>
     <div>
-      <input type="submit" value="Porosisni MinCir+" class="button">
+      <input type="submit" value="Porosisni SLIM FIT" class="button">
     </div>
   </form>
   <p class="zbritje">* zbritje 50%</p>

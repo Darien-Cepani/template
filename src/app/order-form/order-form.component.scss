@@ -1,75 +1,107 @@
 .container{
-  --accent-color: #497592;
-  background-color: white;
-  box-shadow: 7px 7px 17px rgba(0,0,0,0.7);
-  border-radius: 20px;
-  padding: 30px;
-  width: 300px;
-  display: flex;
-  flex-direction: column;
+  padding: 1.5em;
+  height: 100%;
+  margin: 0 auto;
+  align-items: center;
   text-align: center;
-  color: black;
+  color: #6155a6;
+  font-size: 20px;
 }
 
 .countdown{
   text-align: center;
   background-color: red;
   border-radius: 50px;
-  padding: 30px;
+  padding: 30px 10px;
   margin: 0 auto;
-  width: 70%;
+  width: 100%;
   font-size: 2.5rem;
   color: white;
   font-weight: bold;
 }
 
-h5{
-  font-size: 1rem;
-  font-weight: bold;
-}
-
 .price{
-  font-size: 2rem;
-  margin: 30px 0px;
+  font-size: 1em;
+  margin: 1.5em 0;
+  h5{
+    font-size: 1em;
+    margin-bottom: 1.5em;
+    font-weight: bold;
+  }
 }
 
 .old-price{
-  text-decoration: 2px solid red line-through;
-  color: var(--accent-color);
-  margin-right: 7px;
+  color: #a685e2;
+  margin-right: 0.5em;
+  font-size: 2em;
+}
+
+.strikethrough{
+  position: relative;
+}
+
+.strikethrough:before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 50%;
+  right: 0;
+  border-top: 0.08em solid;
+  border-color: red;
+
+  -webkit-transform:rotate(-7deg);
+  -moz-transform:rotate(-7deg);
+  -ms-transform:rotate(-7deg);
+  -o-transform:rotate(-7deg);
+  transform:rotate(-7deg);
 }
 
 .new-price{
     font-weight: bold;
+    font-size: 2em;
 }
 
-textarea, input, select{
-  padding: 10px 10px 10px 20px;
-  box-shadow: inset 3px 3px 7px var(--accent-color);
+.input{
+  padding: 15px 10px 15px 20px;
+  box-shadow: inset 3px 3px 7px #6155a6;
   text-decoration: none;
-  margin: 5px 0px;
+  margin: 0.6em 0px;
   border-radius: 50px;
   -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
   text-align: left;
   border: 0px;
   width: 90%;
-  background-color: #eee;
+  background: transparent;
+  color: #6155a6;
   transition: all 200ms ease-in-out;
+  font-weight: bold;
+}
+
+.input::placeholder{
+  color: #6155a6;
+  font-weight: bold;
 }
 
 input:hover, select:hover, textarea:hover{
-  box-shadow: 3px 3px 7px var(--accent-color);
-  background-color: white;
+  box-shadow: 3px 3px 7px #6155a6;
+  background:#ffe6e6;
+  color: black;
+}
+
+.input:hover::placeholder{
+  color: black;
 }
 
 .button{
   width: 100%;
-  border: 2px solid var(--accent-color);
-  color: var(--accent-color);
-  padding: 15px 25px;
-  margin: 20px 0px;
-  text-decoration: none;
-  background: white;
+  border: 2px solid #6155a6;
+  color: #6155a6;
+  padding: 1em 1.5em;
+  margin: 2em 0px;
+  background: transparent;
   border-radius: 50px;
   font-weight: bold;
   font-size: 1rem;
@@ -79,14 +111,13 @@ input:hover, select:hover, textarea:hover{
 }
 
 .button:hover{
-  border: 2px solid var(--accent-color);
-  background: var(--accent-color);
-  color: #ffffff;
+  border: 2px solid #6155a6;
+  background: #6155a6;
+  color: #fff;
 }
 
 .zbritje{
   font-weight: bold;
-  font-size: 1rem;
-  color: var(--accent-color);
+  font-size: 0.9em;
 }
 

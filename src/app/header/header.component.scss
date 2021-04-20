@@ -1,40 +1,39 @@
 header {
   --accent-color: #497592;
-  background: url(../../assets/img/h-bg.png);
+  background: url(../../assets/img/background-pattern.png);
   background-color: var(--accent-color);
   background-repeat: no-repeat;
-  background-size: contain;
-  height: 90vh;
-  color: white;
+  background-size: cover;
+  height: 100vh;
+  color: #6155a6;
   display: flex;
+}
+
+.background-hero{
+  left: -2.5em;
+  position: relative;
 }
 
 .wrapper{
-  width: 60%;
+  width: 100%;
   display: flex;
   flex-direction: row;
-  margin: 7% auto;
-  background: rgba(49,75,92,0.7);
-  border-radius: 50px;
-  backdrop-filter: blur(10px);
-}
-
-.form{
-  margin-right: 7%;
+  height: fit-content;
+  margin: auto;
+  border-radius: 10px;
+  background: linear-gradient(145deg, rgba(97,85,166,0.7) 0%, rgba(166,133,226,0.5) 25%, rgba(255,171,225,0.5) 75%, rgba(255,230,230,0.5) 100%);
+  backdrop-filter: blur(15px);
 }
 
 .info{
-  color: white;
-  font-size: 1.2rem;
-  line-height: normal;
-  height: 100%;
-  margin: auto 0;
+  font-size: 1.5em;
+  margin: auto 1.5em;
+  line-height: 1.5em;
   display: flex;
   flex-direction: column;
-}
-
-.prod-img{
-  width: 70%;
-  margin: 0 auto;
+  img{
+    width: 20em;
+    margin: -1.5em auto;
+  }
 }
 
