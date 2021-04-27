@@ -1,8 +1,10 @@
 .container {
   --accent-color: #6155a6;
-  background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(97,85,166,1) 15%, rgba(97,85,166,1) 85%, rgba(255,255,255,1) 100%);
+  background: url(../../assets/img/background-pattern-2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
   height: 120vh;
-  color: white;
+  color: #6155a6;
   padding: 4% 0;
   line-height: 2em;
 }
@@ -15,10 +17,12 @@
 h1 {
   font-size: 2.5rem;
   font-weight: bold;
+  color: #6155a6;
 }
 
 p{
   font-size: 1.3rem;
+  color: #a685e2;
 }
 
 .cards{
@@ -30,10 +34,10 @@ p{
 
 .cards .case{
   border-radius: 10px;
-  box-shadow: 3px 3px 15px rgba($color: #000000, $alpha: 0.7);
+  box-shadow: 5px 5px 10px rgba($color: #a685e2, $alpha: 0.5);
   margin: 15px;
   width: fit-content;
-  transition: all 200ms ease-in-out;
+  transition: all 250ms ease-in-out;
   background-color: white;
   img{
     border-radius: 10px 10px 0px 0px;
@@ -62,9 +66,13 @@ p{
   .words{
     font-size: 1rem;
   }
+  p{
+    color: black;
+  }
 }
 
 .cards .case:hover{
+  cursor: pointer;
   transform: scale(1.05);
-  box-shadow: 7px 7px 25px rgba($color: #000000, $alpha: 0.7);
+  box-shadow: 7px 7px 25px rgba($color: #6155a6, $alpha: 0.7);
 }

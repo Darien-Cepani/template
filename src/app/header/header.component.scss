@@ -1,26 +1,40 @@
 header {
-  --accent-color: #497592;
-  background: url(../../assets/img/background-pattern.png);
-  background-color: var(--accent-color);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  height: 90vh;
   color: #6155a6;
   display: flex;
-}
-
-.background-hero{
-  left: -2.5em;
   position: relative;
 }
 
-.wrapper{
+.background-pattern{
+  color: #999999;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -100;
   width: 100%;
+  height: 115vh;
+}
+
+.background-hero{
+  color: #999999;
+  position: absolute;
+  top: -5em;
+  left: 0;
+  z-index: -99;
+  height: 100vh;
+}
+
+.wrapper{
+  width: 64%;
   display: flex;
   flex-direction: row;
   height: fit-content;
-  margin: auto;
-  border-radius: 10px;
+  position: relative;
+  left: 33vw;
+  margin: auto 0;
+  border-radius: 30px;
   background: linear-gradient(145deg, rgba(97,85,166,0.7) 0%, rgba(166,133,226,0.5) 25%, rgba(255,171,225,0.5) 75%, rgba(255,230,230,0.5) 100%);
   backdrop-filter: blur(15px);
 }

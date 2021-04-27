@@ -12,6 +12,7 @@ import { OrderFormComponent } from './order-form/order-form.component';
 import { CountdownModule } from 'ngx-countdown';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ExpertsComponent } from './experts/experts.component';
+import { ContainsComponent } from './contains/contains.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { ExpertsComponent } from './experts/experts.component';
     CovidWarningComponent,
     OrderFormComponent,
     ExpertsComponent,
+    ContainsComponent
   ],
   imports: [
     BrowserModule,
