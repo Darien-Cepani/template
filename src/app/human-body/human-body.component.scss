@@ -1,21 +1,25 @@
+.container{
+  width: 100%;
+}
+
 .wrapper{
   --accent-color: #6155a6;
   display: flex;
-  margin: 0 auto;
+  margin: 5em auto;
   width: 75%;
   flex-direction: column;
-  padding: 5% 0;
   height: 90vh;
 }
 
 .top{
-  margin-top: 2em;
   h1{
     font-size: 2.5rem;
+    line-height: 1.3em;
     color: #6155a6;
   }
   p{
     font-size: 1.5rem;
+    line-height: 1.3em;
     color: #a685e2;
   }
 }
@@ -130,5 +134,42 @@ img{
   cursor: pointer;
   img{
     filter: invert(0);
+  }
+}
+
+@media only screen and (max-width: 1422px) {
+}
+
+@media only screen and (max-width: 1142px) {
+
+}
+
+@media only screen and (max-width: 842px) {
+
+}
+
+@media only screen and (max-width: 530px) {
+  .container{
+    width: 100%;
+  }
+
+  .wrapper{
+    width: 90%;
+    margin-bottom: 5em;
+    text-align: center;
+  }
+
+  .cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  img{
+    width: 5em;
+    filter: invert(180);
+  }
+
+  .human-body{
+    display: none;
   }
 }

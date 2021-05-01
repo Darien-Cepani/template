@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SpinWheelComponent } from './spin-wheel.component';
+import { TimeForEffectComponent } from './time-for-effect.component';
 
-describe('SpinWheelComponent', () => {
-  let component: SpinWheelComponent;
-  let fixture: ComponentFixture<SpinWheelComponent>;
+describe('TimeForEffectComponent', () => {
+  let component: TimeForEffectComponent;
+  let fixture: ComponentFixture<TimeForEffectComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ SpinWheelComponent ]
+      declarations: [ TimeForEffectComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(SpinWheelComponent);
+    fixture = TestBed.createComponent(TimeForEffectComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

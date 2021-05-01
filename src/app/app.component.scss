@@ -425,3 +425,14 @@ td,
 th {
   padding: 0;
 }
+
+.footer-form{
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  margin: 5em auto;
+
+  img{
+    width: 50%;
+  }
+}

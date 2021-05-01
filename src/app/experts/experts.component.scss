@@ -1,56 +1,86 @@
 .container {
-  --accent-color: #497592;
-  background-color: white;
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 75vh;
-  color: black;
-  padding: 4% 0;
   line-height: 2em;
 }
 
 .wrapper{
-  width: 80%;
-  margin: 0 auto;
+  width: 75%;
+  margin: 5em auto;
 }
 
 .top{
-  color: white;
+  text-align: center;
   h1{
-    font-size: 2rem;
+    font-size: 2.5rem;
+    line-height: 1.3;
     font-weight: bold;
+    color: #6155a6;
   }
   p{
-    font-size: 1.3rem;
+    font-size: 1.5rem;
+    line-height: 1.3;
+    color: #a685e2;
   }
-}
-
-.bottom{
-  display: grid;
-  grid-template-columns: 2fr 2fr;
-  margin: 0 auto;
 }
 
 .testimony{
-  border-radius: 10px;
-  box-shadow: 3px 3px 15px rgba($color: #000000, $alpha: 0.7);
-  margin: 15px;
-  width: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 90%;
+  margin: 3em auto;
   transition: all 200ms ease-in-out;
   background-color: white;
   img{
-    border-radius: 10px 10px 0px 0px;
-    width: 20%;
-    display: inline-block;
+    border-radius: 10px 10px 10px 10px;
+    margin-right: 2em;
+    width: 25em;
   }
   .text{
-    padding: 20px;
-  }
-  .words{
-    font-size: 1rem;
+    margin-top: 2em;
+    font-size: 1.3em;
   }
 }
 
-.prod-img{
-  width: 60%;
+.img{
+  width: 100%;
+  text-align: center;
+}
+
+.img p{
+  width: 100%;
+}
+
+@media only screen and (max-width: 1422px) {
+}
+
+@media only screen and (max-width: 1142px) {
+
+}
+
+@media only screen and (max-width: 842px) {
+
+}
+
+@media only screen and (max-width: 530px) {
+  .container{
+    height: fit-content;
+  }
+
+  .wrapper{
+    width: 90%;
+  }
+
+  .testimony{
+    display: block;
+    width: 100%;
+
+    img{
+      border-radius: 10px 10px 10px 10px;
+      width: 100%;
+    }
+  }
+
+  .img p{
+    width: 100%;
+  }
 }

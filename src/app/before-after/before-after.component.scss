@@ -3,15 +3,16 @@
   background: url(../../assets/img/background-pattern-2.png);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 120vh;
+  height: 100vh;
   color: #6155a6;
-  padding: 4% 0;
   line-height: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .wrapper{
-  width: 80%;
-  margin: 0 auto;
+  width: 75%;
 }
 
 h1 {
@@ -75,4 +76,34 @@ p{
   cursor: pointer;
   transform: scale(1.05);
   box-shadow: 7px 7px 25px rgba($color: #6155a6, $alpha: 0.7);
+}
+
+@media only screen and (max-width: 1422px) {
+}
+
+@media only screen and (max-width: 1142px) {
+
+}
+
+@media only screen and (max-width: 842px) {
+
+}
+
+@media only screen and (max-width: 530px) {
+  .container{
+    height: fit-content;
+  }
+
+  .wrapper{
+    width: 90%;
+    margin: 5em 0;
+    text-align: center;
+  }
+
+  .cards{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: left;
+  }
 }
