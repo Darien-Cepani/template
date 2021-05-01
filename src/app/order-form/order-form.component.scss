@@ -8,8 +8,8 @@
 
 .countdown{
   background-color: red;
-  width: 80%;
-  padding: 0.7em 0.35em;
+  width: 88%;
+  padding: 0.9em 0.35em;
   margin: 0 auto;
   color: white;
   font-size: 2.5rem;
@@ -101,13 +101,21 @@ select {
   width: 98.5%;
   background: transparent;
   color: #6155a6;
-  transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out, border-radius 100ms ease-in-out;
   font-weight: bold;
   font-family: inherit;
   font-size: 0.8em;
   cursor: inherit;
   line-height: inherit;
   outline: none;
+}
+
+select:active, select:focus{
+  border-radius: 20px 20px 0 0;
+}
+
+.input:active, .input:focus{
+  border-radius: 20px 20px 0 0;
 }
 
 .input::placeholder{
