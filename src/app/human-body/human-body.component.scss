@@ -1,11 +1,13 @@
 .container{
   width: 100%;
+  padding: 5em auto;
+  border: 1px solid red;
 }
 
 .wrapper{
   --accent-color: #6155a6;
   display: flex;
-  margin: 5em auto;
+  margin: auto;
   width: 75%;
   flex-direction: column;
   height: 90vh;
@@ -151,6 +153,7 @@ img{
 @media only screen and (max-width: 530px) {
   .container{
     width: 100%;
+    background: linear-gradient(100deg, rgba(253,233,247,1) 0%, rgba(255,255,255,1) 100%);
   }
 
   .wrapper{
