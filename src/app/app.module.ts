@@ -13,7 +13,6 @@ import { CountdownModule } from 'ngx-countdown';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ExpertsComponent } from './experts/experts.component';
 import { ContainsComponent } from './contains/contains.component';
-import { NgxWheelModule } from 'ngx-wheel';
 import { TimeForEffectComponent } from './time-for-effect/time-for-effect.component';
 import { CookieService } from 'ngx-cookie-service';
 import { FooterComponent } from './footer/footer.component';
@@ -36,8 +35,7 @@ import { FooterComponent } from './footer/footer.component';
     BrowserModule,
     AppRoutingModule,
     CountdownModule,
-    BrowserAnimationsModule,
-    NgxWheelModule
+    BrowserAnimationsModule
   ],
   providers: [CookieService],
   bootstrap: [AppComponent]

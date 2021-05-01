@@ -7,6 +7,7 @@
 }
 
 .countdown{
+  background-color: red;
   width: 80%;
   padding: 0.7em 0.35em;
   margin: 0 auto;
@@ -79,7 +80,7 @@ p{
   transition: all 250ms ease-in-out;
   font-weight: bold;
   font-family: inherit;
-  font-size: 0.7em;
+  font-size: 0.8em;
   cursor: inherit;
   line-height: inherit;
   outline: none;
@@ -103,7 +104,7 @@ select {
   transition: all 250ms ease-in-out;
   font-weight: bold;
   font-family: inherit;
-  font-size: 0.7em;
+  font-size: 0.8em;
   cursor: inherit;
   line-height: inherit;
   outline: none;
